@@ -67,6 +67,7 @@
         .header {}
 
         .container {
+            max-width: 1280px;
             max-height: 88px;
             padding: 26px 64.5px;
         }
@@ -74,7 +75,7 @@
         .header-container {}
 
         .logo {
-            /* margin-right: 203px; */
+            margin-right: 203px;
         }
 
         .header-btn {
