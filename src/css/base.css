@@ -3,39 +3,22 @@
 }
 
 body {
-  font-family: ;
-  background-color: ;
-}
-
-ul {
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none;
+  font-family:'Gilroy', sans-serif;
+  background-color: #fbfbfb;
+  color: #0c0c0c;
 }
 
 button {
   cursor: pointer;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-}
-
 img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
 }
