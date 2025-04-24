@@ -1,0 +1,117 @@
+    .header {
+        border-bottom: 1px solid #e7e9fc;
+        box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        max-width: 375px;
+        max-height: 74px;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .header-container {}
+
+    .logo {
+        font-family: 'Gilroy';
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: -0.02em;
+        color: #0c0c0c;
+    }
+
+    .header-btn {
+        border: none;
+    }
+
+    .icon-button-header {
+        stroke: #0c0c0c;
+        /* stroke-width: 3px; */
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .nav-item {}
+
+    .nav-item-link {}
+
+    .nav-list-soc {
+        display: none;
+    }
+
+    .nav-item-soc {}
+
+    @media screen and (min-width: 768px),
+    (max-width: 1279px) {
+        .header {}
+
+        .container {}
+
+        .header-container {}
+
+        .logo {}
+
+        .header-btn {}
+
+        .nav-list {}
+
+        .nav-item {}
+
+        .nav-item-link {}
+
+        .nav-list-soc {}
+
+        .nav-item-soc {}
+    }
+
+    @media screen and (min-width: 1280px) {
+        .header {}
+
+        .container {
+            max-width: 1280px;
+            max-height: 88px;
+            padding: 26px 64.5px;
+        }
+
+        .header-container {}
+
+        .logo {
+            /* margin-right: 203px; */
+        }
+
+        .header-btn {
+            display: none;
+        }
+
+        .nav-list {
+            display: flex;
+            gap: 40px;
+        }
+
+        .nav-item {}
+
+        .nav-item-link {
+            font-family: var(--font-family);
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 129%;
+            text-align: center;
+            color: var(--main);
+            text-decoration: none;
+            text-align: ;
+        }
+
+        .nav-list-soc {
+            display: flex;
+        }
+
+        .nav-item-soc {}
+    }
+
+    .icon-soc {
+        fill: #0c0c0c;
+    }
