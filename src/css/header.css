@@ -20,7 +20,11 @@
 
     .header-container-mobile {
         max-width: 200px;
-        background: rgba(12, 12, 12, 0.92), rgba(12, 12, 12, 0.92) url(../img/about-us/background_img_mobile.jpg);
+        height: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-image: linear-gradient (rgba(12, 12, 12, 0.92), rgba(12, 12, 12, 0.92)) url(../img/about-us/background_img_mobile.jpg);
         visibility: hidden;
         display: flex;
         align-items: center;
