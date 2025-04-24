@@ -1,15 +1,24 @@
+* {
+  box-sizing: border-box;
+}
 
 body {
-  display: flex;
-  flex-direction: column;
-  min-width: 100vw;
-  min-height: 100vh;
-  margin: 0;
+  font-family:'Gilroy', sans-serif;
+  background-color: #fbfbfb;
+  color: #0c0c0c;
 }
 
-main {
-  flex-grow: 1;
+button {
+  cursor: pointer;
 }
-main:has(.back-link) {
-  text-align: center;
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
 }
