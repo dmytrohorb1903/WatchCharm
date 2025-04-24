@@ -26,6 +26,11 @@
         border: none;
     }
 
+    .icon-button-header {
+        stroke: #0c0c0c;
+        /* stroke-width: 3px; */
+    }
+
     .nav-list {
         display: none;
     }
@@ -75,7 +80,7 @@
         .header-container {}
 
         .logo {
-            margin-right: 203px;
+            /* margin-right: 203px; */
         }
 
         .header-btn {
