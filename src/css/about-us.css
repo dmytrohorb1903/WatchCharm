@@ -52,6 +52,57 @@
   background-color: #1f3cd4;
 }
 
-.about-us-btn:hover {
-  background-color: #1f3cd4;
+@media screen and (min-width: 768px) {
+  .about-us {
+    padding: 40px 0;
+  }
+
+  .about-us-wrap {
+    padding: 80px 60px;
+    border-radius: 50px;
+    max-width: 704px;
+    margin-bottom: 40px;
+  }
+
+  .about-us-title {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 0.92;
+    margin-bottom: 40px;
+  }
+
+  .about-us-list {
+    margin-bottom: 60px;
+  }
+
+  .about-us-descr {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about-us {
+    padding: 50px 0;
+  }
+
+  .about-us-container {
+    display: flex;
+    gap: 40px;
+    max-height: 532px;
+  }
+
+  .about-us-wrap {
+    max-width: 580px;
+    margin-bottom: 0;
+  }
+
+  .about-us-list {
+    margin-bottom: 40px;
+  }
+
+  .about-us-btn:hover,
+  .about-us-btn:focus {
+    background-color: #1f3cd4;
+  }
 }
