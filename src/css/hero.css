@@ -1,7 +1,5 @@
 .hero {
-  max-width: 335px;
-  padding-top: 60px;
-  padding-bottom: 30px;
+  padding: 60px 0;
   margin: 0 auto;
 }
 .hero .container {
@@ -82,25 +80,6 @@
 }
 .hero-watch {
   border-radius: 30px;
-  background-image: linear-gradient
-      (rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2)),
-    url('../img/hero-img/hero-img-phone.jpg');
-}
-@media screen and (min-resolution: 2x) {
-  .hero-watch {
-    background-image: linear-gradient
-        (rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2)),
-      url('../img/hero-img/hero-img-phone-2x.jpg');
-  }
-  .one {
-    background-image: url('../img/hero-img/trio1-2x.jpg');
-  }
-  .two {
-    background-image: url('../img/hero-img/trio2-2x.jpg');
-  }
-  .three {
-    background-image: url('../img/hero-img/trio3-2x.jpg');
-  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -168,20 +147,10 @@
   }
   .hero-watch {
     border-radius: 50px;
-    background-image: linear-gradient
-        (rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2)),
-      url('../img/hero-img/hero-watch-tab.jpg');
-  }
-  @media screen and (min-resolution: 2x) {
-    .hero-watch {
-      background-image: linear-gradient
-          (rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2)),
-        url('../img/hero-img/hero-watch-tab-2x.jpg');
-    }
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1280px) {
   .hero {
     max-width: 1280px;
     padding-top: 80px;
@@ -229,15 +198,5 @@
   }
   .hero-watch {
     border-radius: 50px;
-    background-image: linear-gradient
-        (rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2)),
-      url('../img/hero-img/hero-watch.jpg');
-  }
-  @media screen and (min-resolution: 2x) {
-    .hero-watch {
-      background-image: linear-gradient
-          (rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2)),
-        url('../img/hero-img/hero-watch-2x.jpg');
-    }
   }
 }
