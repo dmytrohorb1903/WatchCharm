@@ -15,5 +15,7 @@
 /* Sections style */
 @import url('./header.css');
 @import url('./mob-menu.css');
+@import url('./hero.css');
 @import url('./about-us.css');
 @import url('./footer.css');
+@import url('./reviews.css');
