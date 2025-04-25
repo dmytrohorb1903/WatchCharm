@@ -10,14 +10,19 @@
   margin-bottom: 24px;
 }
 
-.sale-list {
+.sale-first-list {
   display: flex;
-  flex-wrap: wrap;
-  column-gap: 5px;
+  flex-direction: column;
   row-gap: 20px;
+  margin-bottom: 20px;
 }
 
-.sale-item {
+.sale-second-list {
+  display: flex;
+  column-gap: 5px;
+}
+
+.sale-second-item {
   border: 1px solid rgba(12, 12, 12, 0.05);
   background-color: #f3f3f3;
   border-radius: 16px;
@@ -25,13 +30,11 @@
   width: calc((100% - 15px) / 4);
 }
 
-.sale-picture-wrap {
+.sale-first-item:last-child {
   border: 1px solid rgba(12, 12, 12, 0.05);
   background-color: #f3f3f3;
   border-radius: 30px;
   padding: 50px;
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
 
 .sale-image {
@@ -50,25 +53,26 @@
   line-height: 1.16667;
   letter-spacing: -0.02em;
   color: #fbfbfb;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
-.product-tag {
+.sale-product-tag {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.28571;
   letter-spacing: -0.02em;
   color: rgba(251, 251, 251, 0.5);
+  margin-bottom: 20px;
 }
 
-.price-list {
+.sale-price-list {
   display: flex;
   gap: 9px;
   margin-bottom: 28px;
   align-items: center;
 }
 
-.price {
+.sale-price {
   font-weight: 600;
   font-size: 16px;
   line-height: 1.25;
@@ -79,7 +83,7 @@
   background-color: rgba(251, 251, 251, 0.1);
 }
 
-.price-through {
+.sale-price-through {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16667;
@@ -98,22 +102,97 @@
   margin-bottom: 28px;
 }
 
-.advantages-list {
+.sale-advantages-list {
   display: flex;
   flex-wrap: wrap;
   row-gap: 8px;
   column-gap: 8px;
 }
 
-.advantages-item {
+.sale-advantages-item {
   border: 1px solid rgba(251, 251, 251, 0.2);
   border-radius: 8px;
   padding: 8px 12px;
 }
 
-.adventages {
+.sale-adventages {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.33333;
   color: #fbfbfb;
+}
+
+/* =================== TABLET ADAPTIVE =================== */
+@media screen and (min-width: 768px) {
+  .sale {
+    padding: 40px 0;
+  }
+
+  .sale-title {
+    margin-bottom: 40px;
+    font-size: 48px;
+    line-height: 0.91667;
+    margin-bottom: 40px;
+  }
+
+  .sale-first-list {
+    flex-direction: row;
+  }
+
+  .sale-second-list {
+    flex-wrap: wrap;
+    column-gap: 40px;
+  }
+
+  .sale-first-item {
+    row-gap: 20px;
+  }
+
+  .sale-second-item {
+    padding: 16px 18px;
+    border-radius: 20px;
+    /* flex-basis: calc((100% - 30px) / 4); */
+    /* width: calc((100% - 30px) / 4); */
+  }
+
+  .sale-first-item:last-child {
+    padding: 80px 112px;
+    border-radius: 50px;
+  }
+
+  .sale-box {
+    padding: 60px;
+    border-radius: 30px;
+  }
+
+  .sale-subtitle {
+    font-size: 32px;
+    line-height: 1.125;
+    max-width: 436px;
+  }
+
+  .sale-price-list {
+    margin-bottom: 30px;
+  }
+
+  .sale-price {
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  .sale-text {
+    font-size: 16px;
+    line-height: 1.25;
+    width: 584px;
+  }
+
+  .sale-advantages-list {
+    max-width: 398px;
+  }
+
+  .sale-adventages {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.28571;
+  }
 }
