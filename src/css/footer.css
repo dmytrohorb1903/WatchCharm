@@ -67,6 +67,7 @@
     text-align: center;
     color: #fbfbfb;
     margin-bottom: 92px;
+
     
 
 }
@@ -103,6 +104,10 @@
 .footer-adress {
     display: flex;
     max-width: 83px;
+
+
+    flex-direction: column;
+        text-align:justify;
  
    
 }
@@ -176,9 +181,6 @@
     font-size: 20px;
 }
 
-.mob-icon-menu {
-   
-}
 
 .icon-add {
     width: 20px;
