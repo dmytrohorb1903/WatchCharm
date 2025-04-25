@@ -1,5 +1,5 @@
 {
-  "name": "WatchCharm",
+  "name": "watchcharm",
   "private": true,
   "version": "1.0.0",
   "type": "module",
@@ -19,5 +19,15 @@
   "dependencies": {
     "vite-plugin-full-reload": "^1.2.0",
     "vite-plugin-html-inject": "^1.1.2"
-  }
+  },
+  "description": "Цей проект було створено за допомогою Vite. Для знайомства та налаштування\r додаткових можливостей [звернись до документації](https://vitejs.dev/).",
+  "main": "vite.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmytrohorb1903/WatchCharm.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dmytrohorb1903/WatchCharm/issues"
+  },
+  "homepage": "https://github.com/dmytrohorb1903/WatchCharm#readme"
 }
