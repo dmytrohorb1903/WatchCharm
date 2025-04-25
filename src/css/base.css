@@ -17,8 +17,4 @@ img {
   max-width: 100%;
   height: auto;
 }
-.is-open {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: all;
-}
+

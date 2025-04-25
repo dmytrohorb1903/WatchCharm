@@ -1,0 +1,91 @@
+.menu-overlay { 
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    width: 200px;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    padding-top: 240px;
+    padding-bottom: 40px;
+    display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-image: url(/img/mob-menu/mob-menu.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+@media screen and (min-resolution: 2x) {
+    .menu-overlay {
+        background-image: url(/img/mob-menu/mob-menu-2x.jpg);
+    }
+}
+.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+}
+
+.menu-cls-btn {
+position: absolute;
+top: 20px;
+right: 20px;
+border: none;
+background-color:transparent;
+width: 34px;
+height: 34px;
+}
+
+.cls-btn-icon {
+    stroke: #fbfbfb;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.menu-item {
+
+}
+
+.menu-link {
+font-size: 14px;
+    line-height: 1.28571;
+    text-align: center;
+    color: #fbfbfb;
+}
+.menu-soc {
+    
+}
+
+.menu-soc-list {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 10px;
+
+}
+
+.menu-soc-item {
+border: 1px solid rgba(251, 251, 251, 0.1);
+    border-radius: 10px;
+    padding: 8px;
+    width: 34px;
+    height: 34px;
+    
+}
+
+.menu-soc-link {
+
+}
+
+.menu-soc-icon {
+    fill: #fbfbfb;
+}
