@@ -14,5 +14,6 @@
 
 /* Sections style */
 @import url('./header.css');
+@import url('./about-us.css');
 @import url('./footer.css');
 @import url('./reviews.css');
