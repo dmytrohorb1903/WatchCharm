@@ -11,9 +11,12 @@
     .container {}
 
     .header-container {
-        display: flex;
+    display: flex;
         align-items: center;
         justify-content: space-between;
+    }
+    .header-nav {
+   
     }
 
    
@@ -32,11 +35,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 34px;
-        height: 34px;
+        width: 40px;
+        height: 40px;
     }
 
-    .icon-button-header {
+    .header-btn-icon {
         stroke-width: 2.50px;
             stroke: #0c0c0c;
     }
@@ -60,7 +63,9 @@
         justify-content: center;
     }
 
-    .nav-item-soc {}
+    .nav-item-soc {
+
+    }
 
     @media screen and (min-width: 768px)
      {
@@ -113,32 +118,62 @@
         .nav-item {}
 
         .nav-item-link {
-            font-family: var(--font-family);
             font-weight: 500;
             font-size: 14px;
-            line-height: 129%;
+            line-height: 1.28571;
             text-align: center;
-            color: var(--main);
+            color: #0c0c0c;
             text-decoration: none;
-            text-align: ;
+            text-align: center;
+            display: block;
+            position: relative;
         }
+        .nav-item-link.active:active {
+                    color: #3350e9;;
+                    border-radius: 50%;
+                    width: 8px;
+                    height: 8px;
+                }
+        .nav-item-link.active::after {
+                    content: '';
+                    position: absolute;
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 50%;
+                    background-color: #3350e9;;
+                    bottom: -10px;
+                    left: 15px;
+                }
 
         .nav-list-soc {
             display: flex;
-            gap: 10px;
             align-items: center;
             justify-content: center;
+            gap: 10px;
         }
 
         .nav-item-soc {
             border: 1px solid rgba(12, 12, 12, 0.1);
             border-radius: 10px;
-            padding: 8px;
             width: 36px;
             height: 36px;
+            display: flex;
+                padding: 8px;
+                transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .icon-soc {
             fill: #0c0c0c;
+            opacity: 0.8;
+            transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        }
+        .icon-soc:hover,
+        .icon-soc:focus {
+            fill: #3350e9;
+        }
+        .nav-item-soc:hover,
+        .nav-item-soc:focus {
+            border: 1px solid rgba(51, 80, 233, 0.1);
         }
     }
