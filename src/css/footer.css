@@ -1,5 +1,6 @@
 .footer {
-    margin-top: 50px;
+    padding-top: 30px;
+    padding-bottom: 20px;
 }
 .footer-container {
     border-radius: 30px;
@@ -174,7 +175,10 @@
 /* _______________________Media________________ */
 
 @media screen and (min-width: 768px) {
-    
+    .footer {
+        padding-top: 40px;
+        padding-bottom: 25px;
+    }
 .footer-container {
        
         padding: 40px 40px 28px 40px;
@@ -303,10 +307,13 @@
 }
 
 @media screen and (min-width: 1280px) {
-
+.footer {
+padding-top: 50px;
+padding-bottom: 32px;
+}
 
 .footer-pk {
-    padding: 0 32px;
+
 }
 
 .nav-link-tell{
