@@ -25,7 +25,7 @@
     </button>
     <ul class="nav-list">
       <li class="nav-item">
-        <a class="nav-item-link active" href="/index.html">Home</a>
+        <a class="nav-item-link active" href="/WatchCharm/">Home</a>
       </li>
       <li class="nav-item">
         <a class="nav-item-link" href="#about">About Us</a>
@@ -708,24 +708,29 @@
               name="user-name"
               class="contact-input"
               placeholder="Name"
+              required
             />
           </label>
           <label for="user-email" class="contact-label">
             <input
-              type="text"
+              type="email"
               id="user-email"
               name="user-email"
               class="contact-input"
               placeholder="Email"
+              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+              required
             />
           </label>
           <label for="user-phone" class="contact-label">
             <input
-              type="text"
+              type="tel"
               id="user-phone"
               name="user-phone"
               class="contact-input"
               placeholder="+380"
+              pattern="^\+\d{3}-\d{2}-\d{3}-\d{2}-\d{2}$"
+              required
             />
           </label>
           <label for="" class="contact-label">
@@ -754,7 +759,7 @@
             srcset="/WatchCharm/assets/watch-us-mob-BEraJptk.png 1x, /WatchCharm/assets/watch-us-mob@2x-D2-oDC3Y.png 2x"
           />
           <img
-            src="../img/contact-us/watch-us.jpg"
+            src="/WatchCharm/assets/watch-us-x-TQ4EdK.jpg"
             alt="watch"
             width="704"
             class="contact-img"
@@ -812,7 +817,7 @@
                 <nav class="footer-menu">
                     <ul class="footer-links">
                         <li class="second-link">
-                            <a href="/src/index.html">Home</a>
+                            <a href="/WatchCharm/">Home</a>
                         </li>
                         <li class="second-link">
                             <a href="#about">About Us</a>
