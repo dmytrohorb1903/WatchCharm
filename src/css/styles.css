@@ -14,5 +14,14 @@
 
 /* Sections style */
 @import url('./header.css');
+
 @import url('./sale.css');
+
+@import url('./mob-menu.css');
+@import url('./hero.css');
+@import url('./catalog.css');
+@import url('./about-us.css');
+@import url('./advertisement.css');
+
 @import url('./footer.css');
+@import url('./reviews.css');

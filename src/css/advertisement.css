@@ -1,0 +1,135 @@
+.advertisement {
+  padding: 30px 0;
+}
+
+.container .back {
+  background-color: #0c0c0c;
+  background-image: url(/img/advertisement/advertisement-mob.png);
+  border-radius: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (min-resolution: 2x) {
+  .container .back {
+    background-image: url(/img/advertisement/advertisement-mob-2x.png);
+  }
+}
+
+.back {
+  padding: 60px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 28px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.advertisement-text {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+  text-align: start;
+}
+
+.advertisement-span {
+  color: rgba(251, 251, 251, 0.5);
+}
+
+.advertisement-btn {
+  width: 160px;
+  height: 48px;
+  padding: 15px 43px 15px 44px;
+  border: 1px solid rgba(251, 251, 251, 0.15);
+  border-radius: 16px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28;
+  text-align: center;
+  color: #fbfbfb;
+  background-color: transparent;
+  display: inline-block;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.advertisement-btn:hover,
+.advertisement-btn:focus,
+.advertisement-btn:active {
+  color: #0c0c0c;
+  background-color: #fbfbfb;
+}
+
+/* -------768--------- */
+@media only screen and (min-width: 768px) {
+  .advertisement {
+    padding: 40px 0;
+  }
+
+  .container .back {
+    background-image: url(/img/advertisement/advertisement-tab.png);
+  }
+
+  @media screen and (min-resolution: 2x) {
+    .container .back {
+      background-image: url(/img/advertisement/advertisement-tab-2x.png);
+    }
+  }
+
+  .back {
+    padding: 80px 64px;
+    gap: 32px;
+  }
+
+  .advertisement-text {
+    font-size: 48px;
+    line-height: 0.91;
+  }
+}
+/* ---------1200---------- */
+
+@media only screen and (min-width: 1200px) {
+  .advertisement {
+    padding: 50px 0;
+  }
+
+  .container .back {
+    background-image: url(/img/advertisement/advertisement-des-2x.png);
+  }
+
+  @media screen and (min-resolution: 2x) {
+    .container .back {
+      background-image: url(/img/advertisement/advertisement-des-2x.png);
+    }
+  }
+
+  .back {
+    padding: 83px 380px 83px 80px;
+    display: flex;
+    flex-direction: initial;
+    align-items: flex-start;
+    gap: 0;
+    position: relative;
+  }
+
+  .advertisement-btn {
+    position: absolute;
+    top: 80px;
+    right: 80px;
+  }
+}
