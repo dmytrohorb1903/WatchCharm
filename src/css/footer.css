@@ -36,6 +36,10 @@
     justify-content:flex-start;
     align-items: flex-start;
 }
+.icon-add:hover,
+.icon-add:focus {
+    opacity: 1;
+}
 
 .icon-add {
     fill: #fbfbfb;
