@@ -5,7 +5,7 @@
     .header {
         border-bottom: 1px solid #e7e9fc;
         box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-        padding: 20px 0;
+
     }
 
     .container {}
@@ -26,7 +26,8 @@
         font-weight: 500;
         font-size: 16px;
         letter-spacing: -0.02em;
-        color: #0c0c0c; padding: 5px 0;
+        color: #0c0c0c; 
+        padding: 26px 0;
     }
 
     .header-btn {
@@ -70,14 +71,16 @@
     @media screen and (min-width: 768px)
      {
         .header {
-            padding: 26px 0;
+
         }
 
         .container {}
 
         .header-container {}
 
-        .logo {}
+        .logo {
+            font-size: 20px;
+        }
 
         .header-btn {}
 
@@ -94,7 +97,7 @@
 
     @media screen and (min-width: 1280px) {
         .header {
-            padding: 26px 0;
+
         }
 
         .header-container {
@@ -104,6 +107,7 @@
         }
 
         .logo {
+              
         }
 
         .header-btn {
@@ -127,6 +131,7 @@
             text-align: center;
             display: block;
             position: relative;
+            padding: 26px 0;
         }
         .nav-item-link.active:active {
                     color: #3350e9;;
@@ -140,9 +145,10 @@
                     width: 8px;
                     height: 8px;
                     border-radius: 50%;
-                    background-color: #3350e9;;
-                    bottom: -10px;
-                    left: 15px;
+                    background-color: #3350e9;
+                    bottom: 16px;
+                    left: 50%;
+                    
                 }
 
         .nav-list-soc {
