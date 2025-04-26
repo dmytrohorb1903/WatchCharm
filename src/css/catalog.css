@@ -1,6 +1,9 @@
+
+.catalog {
+padding-top: 30px;
+padding-bottom: 30px;
+}
 .catalog-container {
-  margin-top: 30px;
-  margin-bottom: 30px;
 }
 
 picture {
@@ -112,9 +115,11 @@ button {
 /* media requests */
 
 @media screen and (min-width: 768px) {
+  .catalog {
+    padding: 40px 0;
+  }
   .catalog-container {
-    margin-top: 40px;
-    margin-bottom: 40px;
+   
   }
 
   .section-title {
@@ -147,9 +152,11 @@ button {
 }
 
 @media screen and (min-width: 1280px) {
+  .catalog {
+    padding: 50px 0;
+  }
   .catalog-container {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    
   }
 
   .catalog-list {
