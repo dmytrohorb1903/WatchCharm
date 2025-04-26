@@ -11,10 +11,6 @@ picture {
   max-width: 100%;
 }
 
-button {
-  cursor: pointer;
-}
-
 .section-title {
   font-family: 'Gilroy', sans-serif;
   font-weight: 600;
@@ -106,10 +102,14 @@ button {
   color: #fbfbfb;
   background-color: #3350e9;
   border: none;
+  transition: color 250ms ease;
 
   @media screen and (min-width: 768px) {
     display: none;
   }
+}
+.catalog-button:active {
+background-color: #1f3cd4;
 }
 
 /* media requests */
