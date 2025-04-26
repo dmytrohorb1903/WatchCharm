@@ -15,24 +15,29 @@
               name="user-name"
               class="contact-input"
               placeholder="Name"
+              required
             />
           </label>
           <label for="user-email" class="contact-label">
             <input
-              type="text"
+              type="email"
               id="user-email"
               name="user-email"
               class="contact-input"
               placeholder="Email"
+              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+              required
             />
           </label>
           <label for="user-phone" class="contact-label">
             <input
-              type="text"
+              type="tel"
               id="user-phone"
               name="user-phone"
               class="contact-input"
               placeholder="+380"
+              pattern="^\+\d{3}-\d{2}-\d{3}-\d{2}-\d{2}$"
+              required
             />
           </label>
           <label for="" class="contact-label">
@@ -51,26 +56,26 @@
           <source
             media="(min-width: 1280px)"
             srcset="
-              ./img/contact-us/watch-us-desk.png    1x,
-              ./img/contact-us/watch-us-desk@2x.png 2x
+              /img/contact-us/watch-us-desk.png    1x,
+              /img/contact-us/watch-us-desk@2x.png 2x
             "
           />
           <source
             media="(min-width: 768px)"
             srcset="
-              ./img/contact-us/watch-us-top.png    1x,
-              ./img/contact-us/watch-us-top@2x.png 2x
+              /img/contact-us/watch-us-top.png    1x,
+              /img/contact-us/watch-us-top@2x.png 2x
             "
           />
           <source
             media="(max-width: 767px)"
             srcset="
-              ./img/contact-us/watch-us-mob.png    1x,
-              ./img/contact-us/watch-us-mob@2x.png 2x
+              /img/contact-us/watch-us-mob.png    1x,
+              /img/contact-us/watch-us-mob@2x.png 2x
             "
           />
           <img
-            src="../img/contact-us/watch-us.jpg"
+            src="/img/contact-us/watch-us.jpg"
             alt="watch"
             width="704"
             class="contact-img"
