@@ -26,7 +26,7 @@
         font-weight: 500;
         font-size: 16px;
         letter-spacing: -0.02em;
-        color: #0c0c0c;
+        color: #0c0c0c; padding: 5px 0;
     }
 
     .header-btn {

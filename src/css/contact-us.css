@@ -45,6 +45,7 @@
   line-height: 1.28;
   background-color: transparent;
   margin-bottom: 18px;
+  outline: none;
 }
 
 .contact-textarea {
@@ -58,16 +59,18 @@
   resize: none;
   font-size: 14px;
   line-height: 1.28;
+  outline: none;
 }
 
 .contact-input:hover,
 .contact-input:focus,
 .contact-textarea:hover,
-.contact-textarea:focus,
-.contact-input:active,
-.contact-textarea:active {
+.contact-textarea:focus {
   border: 1px solid #3350e9;
-  border-color: #3350e9;
+}
+.contact-input:active,
+.contact-textarea:active{
+  border: 1px solid #3350e9;
 }
 
 .contact-btn {
@@ -83,6 +86,7 @@
   text-align: center;
   color: #fbfbfb;
   margin-top: 28px;
+  transition: background-color 250ms ease;
 }
 
 .contact-btn:hover,
