@@ -62,7 +62,27 @@ font-size: 14px;
     line-height: 1.28571;
     text-align: center;
     color: #fbfbfb;
+    position: relative;
+    padding: 2px;          
 }
+ .menu-link.active:active {
+     color: #3350e9;
+     ;
+     border-radius: 50%;
+     width: 8px;
+     height: 8px;
+ }
+
+ .menu-link.active::after {
+     content: '';
+     position: absolute;
+     width: 8px;
+     height: 8px;
+     border-radius: 50%;
+     background-color: #3350e9;
+     top: 100%;
+     right: 15px;
+ }
 .menu-soc {
     
 }
