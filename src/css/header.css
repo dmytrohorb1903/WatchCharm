@@ -1,185 +1,187 @@
-    html {
-        scroll-behavior: smooth;
-    }
+html {
+  scroll-behavior: smooth;
+}
 
-    .header {
-        border-bottom: 1px solid #e7e9fc;
-        box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+.header {
+  border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
 
-    }
+.container {
+}
 
-    .container {}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-nav {
+}
 
-    .header-container {
+.logo {
+  font-family: 'Gilroy';
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: #0c0c0c;
+  padding: 26px 0;
+}
+
+.header-btn {
+  border: none;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+}
+
+.header-btn-icon {
+  stroke-width: 2.5px;
+  stroke: #0c0c0c;
+}
+
+.nav-list {
+  display: none;
+}
+
+.nav-item {
+}
+
+.nav-item-link {
+}
+
+.nav-list-soc {
+  display: none;
+}
+
+.nav-list-soc-mobile {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-item-soc {
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+  }
+
+  .container {
+  }
+
+  .header-container {
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .header-btn {
+  }
+
+  .nav-list {
+  }
+
+  .nav-item {
+  }
+
+  .nav-item-link {
+  }
+
+  .nav-list-soc {
+  }
+
+  .nav-item-soc {
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .header {
+  }
+
+  .header-container {
     display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .header-nav {
-   
-    }
+    align-items: center;
+    justify-content: space-between;
+  }
 
-   
+  .logo {
+  }
 
-    .logo {
-        font-family: 'Gilroy';
-        font-weight: 500;
-        font-size: 16px;
-        letter-spacing: -0.02em;
-        color: #0c0c0c; 
-        padding: 26px 0;
-    }
+  .header-btn {
+    display: none;
+  }
 
-    .header-btn {
-        border: none;
-        background-color: transparent;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 40px;
-        height: 40px;
-    }
+  .nav-list {
+    display: flex;
+    gap: 40px;
+  }
 
-    .header-btn-icon {
-        stroke-width: 2.50px;
-            stroke: #0c0c0c;
-    }
+  .nav-item {
+  }
 
-    .nav-list {
-        display: none;
-    }
+  .nav-item-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.28571;
+    text-align: center;
+    color: #0c0c0c;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    position: relative;
+    padding: 26px 0;
+  }
+  .nav-item-link.active:active {
+    color: #3350e9;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+  }
+  .nav-item-link.active::after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #3350e9;
+    bottom: 16px;
+    left: 50%;
+  }
 
-    .nav-item {}
+  .nav-list-soc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
 
-    .nav-item-link {}
+  .nav-item-soc {
+    border: 1px solid rgba(12, 12, 12, 0.1);
+    border-radius: 10px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    padding: 8px;
+    transition: border 250ms ease;
+  }
 
-    .nav-list-soc {
-        display: none;
-    }
-
-    .nav-list-soc-mobile {
-        display: flex;
-        gap: 10px;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .nav-item-soc {
-
-    }
-
-    @media screen and (min-width: 768px)
-     {
-        .header {
-
-        }
-
-        .container {}
-
-        .header-container {}
-
-        .logo {
-            font-size: 20px;
-        }
-
-        .header-btn {}
-
-        .nav-list {}
-
-        .nav-item {}
-
-        .nav-item-link {}
-
-        .nav-list-soc {}
-
-        .nav-item-soc {}
-    }
-
-    @media screen and (min-width: 1280px) {
-        .header {
-
-        }
-
-        .header-container {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .logo {
-              
-        }
-
-        .header-btn {
-            display: none;
-        }
-
-        .nav-list {
-            display: flex;
-            gap: 40px;
-        }
-
-        .nav-item {}
-
-        .nav-item-link {
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 1.28571;
-            text-align: center;
-            color: #0c0c0c;
-            text-decoration: none;
-            text-align: center;
-            display: block;
-            position: relative;
-            padding: 26px 0;
-        }
-        .nav-item-link.active:active {
-                    color: #3350e9;;
-                    border-radius: 50%;
-                    width: 8px;
-                    height: 8px;
-                }
-        .nav-item-link.active::after {
-                    content: '';
-                    position: absolute;
-                    width: 8px;
-                    height: 8px;
-                    border-radius: 50%;
-                    background-color: #3350e9;
-                    bottom: 16px;
-                    left: 50%;
-                    
-                }
-
-        .nav-list-soc {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-        }
-
-        .nav-item-soc {
-            border: 1px solid rgba(12, 12, 12, 0.1);
-            border-radius: 10px;
-            width: 36px;
-            height: 36px;
-            display: flex;
-                padding: 8px;
-                transition: border 250ms ease;
-        }
-
-        .icon-soc {
-            fill: #0c0c0c;
-            opacity: 0.8;
-            transition: fill 250ms 250ms ease;
-
-        }
-        .icon-soc:hover,
-        .icon-soc:focus {
-            fill: #3350e9;
-        }
-        .nav-item-soc:hover,
-        .nav-item-soc:focus {
-            border: 1px solid rgba(51, 80, 233, 0.1);
-        }
-    }
+  .icon-soc {
+    fill: #0c0c0c;
+    opacity: 0.8;
+    transition: fill 250ms 250ms ease;
+  }
+  .icon-soc:hover,
+  .icon-soc:focus {
+    fill: #3350e9;
+  }
+  .nav-item-soc:hover,
+  .nav-item-soc:focus {
+    border: 1px solid rgba(51, 80, 233, 0.1);
+  }
+}
