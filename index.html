@@ -18,7 +18,7 @@
     <header class="header">
   <div class="container header-container">
     <a class="logo" href="/WatchCharm/">watchcharm</a>
-    <button class="header-btn" data-modal-open>
+    <button class="header-btn" data-menu-open>
       <svg width="30" height="12" class="header-btn-icon">
         <use href="/WatchCharm/assets/sprite-DIbCDxY5.svg#icon-burg"></use>
       </svg>
@@ -824,8 +824,13 @@
   </div>
 </footer>
 
-    <div class="menu-overlay">
+    
+<div class="menu-overlay" data-menu>
+  <button type="button" class="menu-cls-btn" data-menu-close>
+
+<div class="menu-overlay">
   <button type="button" class="menu-cls-btn">
+
     <svg width="34" height="34" class="cls-btn-icon">
       <use href="/WatchCharm/assets/sprite-DIbCDxY5.svg#icon-x"></use>
     </svg>
@@ -877,5 +882,6 @@
   </div>
 </div>
 
+    <script src="./js/menu.js"></script>
   </body>
 </html>
