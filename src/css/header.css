@@ -86,10 +86,6 @@
     position: relative;
   }
 
-  .nav-item-link:active {
-    color: #3350e9;
-  }
-
   .nav-item-link::after {
     content: '';
     position: absolute;
@@ -106,7 +102,8 @@
   }
 
   .nav-item-link:hover::after,
-  .nav-item-link:focus::after {
+  .nav-item-link:focus::after,
+  .nav-item-link:active::after {
     opacity: 1;
   }
 
