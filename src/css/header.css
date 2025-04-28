@@ -103,7 +103,7 @@
     bottom: 30px;
     opacity: 0;
     pointer-events: none;
-    transition: opacity 250ms ease;
+    transition: opacity 250ms ease, border 250ms ease;
   }
 
   .nav-item-link:hover::after,
@@ -120,13 +120,7 @@
   }
 
   .nav-item-soc {
-    border: 1px solid rgba(12, 12, 12, 0.1);
-    border-radius: 10px;
-    width: 36px;
-    height: 36px;
-    display: flex;
-    padding: 8px;
-    transition: border 250ms ease;
+   
   }
 
   .icon-soc {
@@ -134,13 +128,23 @@
     opacity: 0.8;
     transition: fill 250ms 250ms ease;
   }
+    .nav-item-soc-link {
+border: 1px solid rgba(12, 12, 12, 0.1);
+  border-radius: 10px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  padding: 8px;
+  transition: border 250ms ease;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+    }
     .nav-item-soc-link:hover,
     .nav-item-soc-link:focus {
+      border: 1px solid rgba(51, 80, 233, 0.1);
       .icon-soc {
           fill: #3350e9;
-        }
-      .nav-item-soc {
-          border: 1px solid rgba(51, 80, 233, 0.1);
-        }
+        }   
     }
 }

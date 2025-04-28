@@ -2,19 +2,25 @@
   padding-top: 30px;
   padding-bottom: 20px;
 }
+
 .footer-container {
   border-radius: 30px;
   padding: 40px 28px 28px 28px;
-  background: #0c0c0c;
+  background: #0C0C0C;
 }
 
 .main-link {
   font-weight: 500;
   font-size: 16px;
   letter-spacing: -0.02em;
-  color: #fbfbfb;
+  color: #FBFBFB;
   display: block;
   margin-bottom: 20px;
+  transition: text-shadow 250ms ease;
+}
+.main-link:hover,
+.main-link:focus {
+  text-shadow: 0 0 #FBFBFB;
 }
 
 .mob-icon-menu {
@@ -22,30 +28,40 @@
   flex-direction: row;
   justify-content: start;
   gap: 10px;
+}
+.main-link-cont {
   margin-bottom: 20px;
 }
 
 .icon-social {
+ 
+}
+.social-icon-link {
   display: flex;
-  border: 1px solid rgba(251, 251, 251, 0.1);
-  border-radius: 10px;
-  padding: 8px;
-  width: 34px;
-  height: 34px;
-  justify-content: flex-start;
-  align-items: flex-start;
+    border: 1px solid rgba(251, 251, 251, 0.1);
+    border-radius: 10px;
+    padding: 8px;
+    width: 34px;
+    height: 34px;
+    justify-content: center;
+    align-items: center;
 }
-.icon-add:hover,
-.icon-add:focus {
-  opacity: 1;
-}
-
 .icon-add {
-  fill: #fbfbfb;
+  fill: #FBFBFB;
   opacity: 0.8;
   width: 18px;
   height: 18px;
+  transition: opacity 250ms ease;
 }
+.social-icon-link:hover,
+.social-icon-link:focus {
+  .icon-add {
+    opacity: 1;
+  }
+}
+
+
+
 
 .nav-link-tell {
   font-weight: 500;
@@ -53,7 +69,7 @@
   line-height: 1.33;
   text-transform: uppercase;
   text-align: center;
-  color: #fbfbfb;
+  color: #FBFBFB;
   border: 1px solid rgba(251, 251, 251, 0.2);
   border-radius: 16px;
   /* padding: 14px 20px; */
@@ -63,33 +79,30 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 40px;
-
   transition: color 250ms ease, background-color 250ms ease;
 }
 
 .nav-link-tell:hover,
 .nav-link-tell:focus {
-  color: #0c0c0c;
-  background-color: #fbfbfb;
+  color: #0C0C0C;
+  background-color: #FBFBFB;
 }
 
-.main-title,
-.footer p:last-child {
-  font-weight: 600;
+.main-title {
+font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: -0.02em;
   text-align: center;
-  color: #fbfbfb;
-
-  margin-bottom: 92px;
+  color: #FBFBFB;
 }
+  
+
 
 .footer-section-links {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-
   justify-content: space-between;
   margin-bottom: 24px;
 }
@@ -103,19 +116,27 @@
   gap: 8px 16px;
   max-width: 147px;
 }
+.footer-main {
+  margin-bottom: 92px;
+}
 
 .second-link {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.33;
   text-align: center;
-  color: #fbfbfb;
+  color: #FBFBFB;
+  opacity: 1;
+  transition: text-shadow 250ms ease;
+}
+.second-link:hover,
+.second-link:focus {
+  text-shadow: 0 0 white;
 }
 
 .footer-adress {
   display: flex;
   max-width: 83px;
-
   flex-direction: column;
   text-align: justify;
 }
@@ -124,8 +145,13 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 1.33;
-  color: #fbfbfb;
+  color: #FBFBFB;
   font-style: normal;
+  transition: text-shadow 250ms ease;
+}
+.link-text:hover,
+.link-text:focus {
+  text-shadow: 0 0 #FBFBFB;;
 }
 
 .footer-line {
@@ -141,6 +167,7 @@
   gap: 8px;
   flex-wrap: wrap;
   /* margin-top: 24px; */
+  transition: text-shadow 250ms ease;
 }
 
 .footer-menu-policy {
@@ -156,6 +183,11 @@
   letter-spacing: -0.02em;
   color: rgba(251, 251, 251, 0.5);
   opacity: 0.9;
+  transition: opacity 250ms ease;
+}
+.link-polic:hover,
+.link-polic:focus {
+  opacity: 1;
 }
 
 .main-link:hover,
@@ -174,15 +206,16 @@
 }
 
 /* _______________________Media________________ */
-
 @media screen and (min-width: 768px) {
   .footer {
     padding-top: 40px;
     padding-bottom: 25px;
   }
+
   .footer-container {
     padding: 40px 40px 28px 40px;
   }
+
   .main-link {
     font-size: 20px;
   }
@@ -218,15 +251,16 @@
     /* padding: 15px; */
   }
 
-  .main-title,
-  .footer p:last-child {
+  .main-title {
     font-size: 28px;
     line-height: 1.14;
     width: 100%;
     padding: 0 50px;
-    margin-bottom: 100px;
     flex-wrap: wrap;
     display: flex;
+  }
+  .footer-main {
+    margin-bottom: 100px;
   }
 
   .footer-section-links {
@@ -296,12 +330,17 @@
     order: 3;
   }
 
-  .main-title,
-  .footer p:last-child {
+  .main-title {
     width: 523px;
     padding: 0px;
-    margin-bottom: 126px;
+    
   }
+     .footer-main {
+       margin-bottom: 126px;
+     }
+     .main-link-cont{
+      margin: 0;
+     }
 
   .footer-links {
     display: flex;
