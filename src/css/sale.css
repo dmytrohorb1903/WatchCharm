@@ -104,7 +104,7 @@
   line-height: 1.28571;
   letter-spacing: -0.02em;
   color: rgba(251, 251, 251, 0.7);
-  width: 279px;
+  max-width: 279px;
   margin-bottom: 28px;
 }
 
@@ -194,7 +194,7 @@
   .sale-text {
     font-size: 16px;
     line-height: 1.25;
-    width: 584px;
+    max-width: 584px;
   }
 
   .sale-advantages-list {
@@ -233,6 +233,6 @@
   }
 
   .sale-text {
-    width: 410px;
+    max-width: 410px;
   }
 }
