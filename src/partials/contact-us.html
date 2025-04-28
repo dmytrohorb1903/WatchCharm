@@ -8,48 +8,50 @@
           phone, and message and we'll get back to you shortly.
         </p>
         <div class="contact-wrap-container">
-          <label for="user-name" class="contact-label">
-            <input
-              type="text"
-              id="user-name"
-              name="user-name"
-              class="contact-input"
-              placeholder="Name"
-              required
-            />
-          </label>
-          <label for="user-email" class="contact-label">
-            <input
-              type="email"
-              id="user-email"
-              name="user-email"
-              class="contact-input"
-              placeholder="Email"
-              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
-              required
-            />
-          </label>
-          <label for="user-phone" class="contact-label">
-            <input
-              type="tel"
-              id="user-phone"
-              name="user-phone"
-              class="contact-input"
-              placeholder="+380"
-              pattern="^\+\d{3}-\d{2}-\d{3}-\d{2}-\d{2}$"
-              required
-              inputmode="numeric"
-            />
-          </label>
-          <label for="" class="contact-label">
-            <textarea
-              class="contact-textarea"
-              name="user-comment"
-              placeholder="Comment"
-              id="user-comment"
-            ></textarea>
-          </label>
-          <button type="submit" class="contact-btn">Send</button>
+          <form>
+            <label for="user-name" class="contact-label">
+              <input
+                type="text"
+                id="user-name"
+                name="user-name"
+                class="contact-input"
+                placeholder="Name"
+                required
+              />
+            </label>
+            <label for="user-email" class="contact-label">
+              <input
+                type="email"
+                id="user-email"
+                name="user-email"
+                class="contact-input"
+                placeholder="Email"
+                pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+                required
+              />
+            </label>
+            <label for="user-phone" class="contact-label">
+              <input
+                type="tel"
+                id="user-phone"
+                name="user-phone"
+                class="contact-input"
+                placeholder="+380"
+                pattern="^\+\d{3}-\d{2}-\d{3}-\d{2}-\d{2}$"
+                required
+                inputmode="numeric"
+              />
+            </label>
+            <label for="user-comment" class="contact-label">
+              <textarea
+                class="contact-textarea"
+                name="user-comment"
+                placeholder="Comment"
+                id="user-comment"
+              ></textarea>
+            </label>
+            <button type="submit" class="contact-btn">Send</button>
+          </form>
         </div>
       </div>
       <div class="contact-img-container">

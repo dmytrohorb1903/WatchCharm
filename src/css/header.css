@@ -225,33 +225,6 @@ html {
 
     }
 
-    @media screen and (min-width: 768px)
-     {
-        .header {
-
-        }
-
-        .container {}
-
-        .header-container {}
-
-        .logo {
-            font-size: 20px;
-        }
-
-        .header-btn {}
-
-        .nav-list {}
-
-        .nav-item {}
-
-        .nav-item-link {}
-
-        .nav-list-soc {}
-
-        .nav-item-soc {}
-    }
-
     @media screen and (min-width: 1280px) {
         .header {
 
@@ -339,3 +312,4 @@ html {
         .nav-item-soc:focus {
             border: 1px solid rgba(51, 80, 233, 0.1);
         }
+      }
