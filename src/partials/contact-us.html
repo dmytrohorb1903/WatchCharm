@@ -7,7 +7,7 @@
           Please use the form below to contact us. Enter your name, email,
           phone, and message and we'll get back to you shortly.
         </p>
-        <div class="contact-wrap-container">
+        <form class="contact-form-container">
           <label for="user-name" class="contact-label">
             <input
               type="text"
@@ -41,7 +41,7 @@
               inputmode="numeric"
             />
           </label>
-          <label for="" class="contact-label">
+          <label for="user-comment" class="contact-label">
             <textarea
               class="contact-textarea"
               name="user-comment"
@@ -49,40 +49,37 @@
               id="user-comment"
             ></textarea>
           </label>
-          <button type="submit" class="contact-btn">Send</button>
-        </div>
+        </form>
+        <button type="submit" class="contact-btn">Send</button>
       </div>
-      <div class="contact-img-container">
-        <picture>
-          <source
-            media="(min-width: 1280px)"
-            srcset="
-              /img/contact-us/watch-us-desk.png    1x,
-              /img/contact-us/watch-us-desk@2x.png 2x
-            "
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              /img/contact-us/watch-us-top.png    1x,
-              /img/contact-us/watch-us-top@2x.png 2x
-            "
-          />
-          <source
-            media="(max-width: 767px)"
-            srcset="
-              /img/contact-us/watch-us-mob.png    1x,
-              /img/contact-us/watch-us-mob@2x.png 2x
-            "
-          />
-          <img
-            src="/img/contact-us/watch-us.jpg"
-            alt="watch"
-            width="704"
-            class="contact-img"
-          />
-        </picture>
-      </div>
+      <picture>
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            /img/contact-us/watch-us-desk.png    1x,
+            /img/contact-us/watch-us-desk@2x.png 2x
+          "
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            /img/contact-us/watch-us-top.png    1x,
+            /img/contact-us/watch-us-top@2x.png 2x
+          "
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            /img/contact-us/watch-us-mob.png    1x,
+            /img/contact-us/watch-us-mob@2x.png 2x
+          "
+        />
+        <img
+          src="/img/contact-us/watch-us.jpg"
+          alt="watch"
+          class="contact-img"
+        />
+      </picture>
     </div>
   </div>
 </section>
