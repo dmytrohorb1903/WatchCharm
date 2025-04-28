@@ -130,12 +130,13 @@
     opacity: 0.8;
     transition: fill 250ms 250ms ease;
   }
-  .icon-soc:hover,
-  .icon-soc:focus {
-    fill: #3350e9;
-  }
-  .nav-item-soc:hover,
-  .nav-item-soc:focus {
-    border: 1px solid rgba(51, 80, 233, 0.1);
-  }
+    .nav-item-soc-link:hover,
+    .nav-item-soc-link:focus {
+      .icon-soc {
+          fill: #3350e9;
+        }
+      .nav-item-soc {
+          border: 1px solid rgba(51, 80, 233, 0.1);
+        }
+    }
 }
