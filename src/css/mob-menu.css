@@ -52,35 +52,33 @@
   gap: 24px;
 }
 
-.menu-item {
-}
-
 .menu-link {
   font-size: 14px;
-  line-height: 1.28571;
+  line-height: 1.29;
   text-align: center;
   color: #fbfbfb;
   position: relative;
-  padding: 2px;
-}
-.menu-link.active:active {
-  color: #3350e9;
-  border-radius: 50%;
-  width: 8px;
-  height: 8px;
 }
 
-.menu-link.active::after {
+.menu-link::after {
   content: '';
   position: absolute;
   width: 8px;
   height: 8px;
   border-radius: 50%;
   background-color: #3350e9;
-  top: 100%;
-  right: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -11px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 250ms ease;
 }
-.menu-soc {
+
+.menu-link:hover::after,
+.menu-link:focus::after,
+.menu-link:active::after {
+  opacity: 1;
 }
 
 .menu-soc-list {
@@ -90,20 +88,29 @@
   gap: 10px;
 }
 
-.menu-soc-item {
+.menu-soc-link {
   border: 1px solid rgba(251, 251, 251, 0.1);
   border-radius: 10px;
   padding: 8px;
   width: 34px;
   height: 34px;
-}
-
-.menu-soc-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 250ms ease;
 }
 
 .menu-soc-icon {
   fill: #fbfbfb;
+  opacity: 0.5;
 }
+
+.menu-soc-link:hover .menu-soc-icon,
+.menu-soc-link:focus .menu-soc-icon,
+.menu-soc-link:active .menu-soc-icon {
+  opacity: 1;
+}
+
 @media only screen and (min-width: 768px) {
   .menu-overlay {
     width: 330px;
