@@ -202,11 +202,10 @@
   margin-bottom: 24px;
 }
 .contact-wrap {
-  width: 335px;
+  max-width: 335px;
   padding: 48px 28px;
   margin-bottom: 20px;
   border-radius: 30px;
-  width: 335px;
   background-color: #f3f3f3;
 }
 .contact-text {
@@ -225,11 +224,12 @@
   gap: 18px;
   margin-bottom: 28px;
 }
+
 .contact-input {
   border: 1px solid rgba(12, 12, 12, 0.15);
   border-radius: 12px;
   padding-left: 14px;
-  width: 279px;
+  width: 224px;
   height: 42px;
   font-size: 14px;
   line-height: 1.28;
@@ -241,7 +241,7 @@
   border-radius: 12px;
   padding-left: 14px;
   padding-top: 12px;
-  width: 279px;
+  width: 224px;
   height: 84px;
   background-color: transparent;
   resize: none;
@@ -277,6 +277,17 @@
 .contact-btn:focus {
   background-color: #1f3cd4;
 }
+
+@media screen and (min-width: 375px) {
+  .contact-input {
+    width: 279px;
+  }
+
+  .contact-textarea {
+    width: 279px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .contact-us {
     padding-top: 40px;
@@ -288,11 +299,10 @@
     margin-bottom: 40px;
   }
   .contact-wrap {
-    width: 335px;
     padding: 50px 122px;
     margin-bottom: 40px;
     border-radius: 30px;
-    width: 704px;
+    max-width: 704px;
     background-color: #f3f3f3;
   }
   .contact-text {
@@ -331,7 +341,7 @@
     padding: 50px 60px;
     margin-bottom: 40px;
     border-radius: 30px;
-    width: 580px;
+    max-width: 580px;
     background-color: #f3f3f3;
   }
   .contact-container {
