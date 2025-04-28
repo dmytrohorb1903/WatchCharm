@@ -1,5 +1,6 @@
 .hero {
-  padding: 60px 0;
+  padding-top: 60px;
+  padding-bottom: 30px;
   margin: 0 auto;
 }
 .hero .container {
@@ -95,7 +96,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 0 32px;
     column-gap: 11px;
     row-gap: 40px;
   }
@@ -144,6 +144,14 @@
   .scrol-link {
     font-size: 20px;
     line-height: 1;
+    transition: color 250ms ease;
+  }
+  .scrol-link:hover,
+  .scrol-link:focus {
+    color: #3350e9;
+  }
+  .scrol-link:active {
+    color: #3350e9;
   }
   .hero-watch {
     border-radius: 50px;
@@ -152,9 +160,11 @@
 
 @media only screen and (min-width: 1280px) {
   .hero {
+    max-width: 1280px;
     padding-top: 80px;
     padding-bottom: 50px;
   }
+ 
   .hero-info-wrap {
     max-width: 597px;
   }
@@ -189,7 +199,17 @@
   .scrol-link {
     font-size: 20px;
     line-height: 1;
-  }
+    transition: color 250ms ease;}
+    
+    .scrol-link:hover,
+    .scrol-link:focus {
+      color: #3350e9;
+    }
+    
+    .scrol-link:active {
+      color: #3350e9;
+    }
+  
   .hero-watch {
     border-radius: 50px;
   }
