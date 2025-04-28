@@ -66,6 +66,7 @@
   display: inline-block;
   white-space: nowrap;
   cursor: pointer;
+  transition: background-color 250ms ease, color 250ms ease;
 }
 
 .advertisement-btn:hover,
@@ -101,9 +102,9 @@
     line-height: 0.91;
   }
 }
-/* ---------1200---------- */
+/* ---------1280---------- */
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1280px) {
   .advertisement {
     padding: 50px 0;
   }
@@ -119,17 +120,19 @@
   }
 
   .back {
-    padding: 83px 380px 83px 80px;
+    padding: 80px;
     display: flex;
-    flex-direction: initial;
+    flex-direction: row;
     align-items: flex-start;
-    gap: 0;
-    position: relative;
+    justify-content: space-between;
+    gap: 140px;
   }
 
+  .advertisement-text {
+    margin-top: 3px;
+  }
   .advertisement-btn {
-    position: absolute;
-    top: 80px;
-    right: 80px;
+    flex-shrink: 0;
   }
 }
+
