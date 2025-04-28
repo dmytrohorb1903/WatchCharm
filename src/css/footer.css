@@ -182,12 +182,12 @@ font-weight: 600;
   line-height: 1.4;
   letter-spacing: -0.02em;
   color: rgba(251, 251, 251, 0.5);
-  opacity: 0.9;
-  transition: opacity 250ms ease;
+  transition: color 250ms ease;
 }
+
 .link-polic:hover,
 .link-polic:focus {
-  opacity: 1;
+  color: rgba(251, 251, 251, 1);
 }
 
 .main-link:hover,
