@@ -5,7 +5,6 @@
   z-index: 999;
   width: 200px;
   height: 100%;
-
   padding-top: 240px;
   padding-bottom: 40px;
   display: flex;
@@ -102,7 +101,7 @@
 
 .menu-soc-icon {
   fill: #fbfbfb;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 .menu-soc-link:hover .menu-soc-icon,
