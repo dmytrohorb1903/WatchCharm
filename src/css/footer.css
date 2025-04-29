@@ -147,6 +147,7 @@ font-weight: 600;
   line-height: 1.33;
   color: #FBFBFB;
   font-style: normal;
+  text-align: left;
   transition: text-shadow 250ms ease;
 }
 .link-text:hover,
